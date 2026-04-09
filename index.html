@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HCC Clinical Toolkit</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      background: linear-gradient(180deg, #f8f9f6 0%, #eef2ea 100%);
+      color: #1f2b33;
+    }
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 28px 18px 48px;
+    }
+    .hero {
+      background: linear-gradient(135deg, #1d4b40 0%, #2f6755 52%, #cb7d34 100%);
+      color: white;
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: 0 18px 36px rgba(18, 31, 28, 0.12);
+    }
+    .hero h1 {
+      margin: 0 0 12px;
+      font-size: 38px;
+      line-height: 1.1;
+    }
+    .hero p {
+      margin: 0;
+      color: rgba(255,255,255,.92);
+      line-height: 1.7;
+    }
+    .grid {
+      display: grid;
+      gap: 18px;
+      margin-top: 22px;
+    }
+    .card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      background: rgba(255,255,255,.94);
+      border: 1px solid #d8ddd4;
+      border-radius: 24px;
+      padding: 22px;
+      box-shadow: 0 10px 22px rgba(24, 34, 31, 0.06);
+    }
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 26px;
+    }
+    .card p {
+      margin: 0;
+      color: #58656f;
+      line-height: 1.7;
+    }
+    .note {
+      margin-top: 20px;
+      border-left: 5px solid #cb7d34;
+      background: #fff7ec;
+      border-radius: 16px;
+      padding: 14px 16px;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>HCC Clinical Toolkit</h1>
+      <p>GitHub Pages 準備版。內含 BCLC 榻邊快速版與 HCC Guideline 2026 完整互動版，兩者都已做成單檔內嵌圖片 HTML，適合手機與 Notion embed 使用。</p>
+    </section>
+
+    <div class="grid">
+      <a class="card" href="./bclc.html">
+        <h2>BCLC 榻邊快速版</h2>
+        <p>Stage 0 / A / B / C / D 快速判讀，同頁可對照原文截圖。</p>
+      </a>
+
+      <a class="card" href="./full.html">
+        <h2>HCC Guideline 2026 完整互動版</h2>
+        <p>整合診斷、BCLC、各期處置、systemic、RT / PBT、肝移植與 Child-Pugh，並附原文頁面截圖核對。</p>
+      </a>
+    </div>
+
+    <div class="note">
+      若之後要部署到 GitHub Pages，只要把這個資料夾內容放進 repo 根目錄，啟用 Pages 即可。
+    </div>
+  </div>
+</body>
+</html>
