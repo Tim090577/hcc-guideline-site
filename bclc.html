@@ -216,6 +216,9 @@
       border: 1px solid #e3e7dd;
       background: #fafafa;
     }
+    .source-card a {
+      display: block;
+    }
 
     .warning {
       margin-top: 20px;
@@ -442,7 +445,9 @@
           ${item.sources.map(([label, src]) => `
             <div class="source-card">
               <h5>${label}</h5>
-              <img src="${src}" alt="${label}">
+              <a href="${src}" target="_blank" rel="noopener noreferrer">
+                <img src="${src}" alt="${label}">
+              </a>
             </div>
           `).join("")}
         </div>
